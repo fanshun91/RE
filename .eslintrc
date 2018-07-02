@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "standard",
+    "plugin:vue/essential"
+  ],
+  "plugins": [
+    "vue",
+    "html"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "rules": {
+    "no-new": "off"
+  }
+}

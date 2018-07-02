@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "env"
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": "css"
+      }
+    ],
+    "transform-vue-jsx",
+    "transform-runtime"
+  ]
+}
