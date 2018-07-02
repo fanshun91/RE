@@ -1,20 +1,20 @@
 <template>
   <div>
-    app.vue1
-    <br>
-    <a-button type="primary">Primary</a-button>
-    <a-button>Default</a-button>
+    <Login/>
   </div>
 </template>
 
 <script>
+import Login from "./views/login/index.vue";
+
 export default {
+  components: {
+    Login
+  },
   data() {
     return {};
   }
 };
 </script>
 
-<style scoped>
-</style>
 

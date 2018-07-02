@@ -48,7 +48,6 @@ if (isDev) { // 开发环境
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                modules: true,
                 sourceMap: true
               }
             },
