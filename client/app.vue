@@ -1,18 +1,22 @@
 <template>
   <div>
-    <Login/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Login from "./views/login/index.vue";
+import { mapState, mapGetters } from "vuex";
 
 export default {
-  components: {
-    Login
-  },
   data() {
     return {};
+  },
+  mounted() {
+    console.log(this.$store);
+  },
+  computed: {
+    ...mapState(["version"]),
+    ...mapGetters(["showVersion"])
   }
 };
 </script>

@@ -1,0 +1,23 @@
+.common-form .tip {
+  margin-right: 9px;
+}
+
+.common-form input.ant-input {
+  width: 128px;
+}
+
+.common-form .ant-select {
+  width: 108px;
+}
+
+.common-form .ant-calendar-range-picker-input {
+  width: 110px;
+}
+
+.common-form {
+  margin-bottom: 20px;
+}
+
+.common-table .op-btn {
+  margin-right: 4px;
+}

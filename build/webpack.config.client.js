@@ -22,6 +22,10 @@ let devServer = {
     errors: true
   },
 
+  historyApiFallback: {
+    index: '/index.html'
+  },
+
   // 热加载
   hot: true
 };

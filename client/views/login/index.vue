@@ -6,8 +6,11 @@ const NormalLoginForm = {
     handleSubmit(e) {
       e.preventDefault();
       this.form.validateFields((err, values) => {
-        if (!err) {
-          console.log("Received values of form: ", values);
+        if (!!err) {
+          throw new Error(err);
+        }
+        if (values.userName == "user" && values.password == "123") {
+          this.$router.push({ path: "/users" });
         }
       });
     }
@@ -57,21 +60,13 @@ const NormalLoginForm = {
                 )}
               </a-form-item>
               <a-form-item>
-                {getFieldDecorator("remember", {
-                  valuePropName: "checked",
-                  initialValue: true
-                })(<a-checkbox>Remember me</a-checkbox>)}
-                <a class="login-form-forgot" href="javascript:;">
-                  Forgot password
-                </a>
                 <a-button
                   type="primary"
                   htmlType="submit"
                   class="login-form-button"
                 >
-                  Log in
+                  登 录
                 </a-button>
-                Or <a href="javascript:;">register now!</a>
               </a-form-item>
             </a-form>
           </div>
@@ -114,11 +109,6 @@ export default Form.create()(NormalLoginForm);
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   height: 100%;
 }
 .login-panel {
