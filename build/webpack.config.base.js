@@ -9,7 +9,6 @@ const isDev = process.env.NODE_ENV === 'development';
 
 // 配置项
 const config = {
-  mode: 'development',
   entry: [
     'babel-polyfill',
     path.join(__dirname, '../client/index.js'),

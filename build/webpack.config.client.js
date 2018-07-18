@@ -41,6 +41,7 @@ if (isDev) { // 开发环境
 
   // use webpack-merge
   config = merge(baseConfig, {
+    mode: "development",
     devtool: '#cheap-module-eval-source-map',
     module: {
       rules: [
@@ -69,6 +70,7 @@ if (isDev) { // 开发环境
 } else { // 生产环境
 
   config = merge(baseConfig, {
+    mode: "production",
     entry: {
       polyfill: 'babel-polyfill',
       app: path.join(__dirname, '../client/index.js')
@@ -95,6 +97,7 @@ if (isDev) { // 开发环境
       ]
     },
     optimization: {
+      namedModules: true,
       namedChunks: true,
       minimizer: [
         new OptimizeCssPlugin({
@@ -111,7 +114,7 @@ if (isDev) { // 开发环境
 
       // 区分打包
       splitChunks: {
-        chunks: 'all',
+        // chunks: 'all',
         cacheGroups: {
           commons: {
             test: /[\\/]node_modules[\\/]/,
@@ -120,7 +123,9 @@ if (isDev) { // 开发环境
         }
       },
 
-      runtimeChunk: true
+      runtimeChunk: true,
+      noEmitOnErrors: true,
+      concatenateModules: true
     },
     plugins: defaultPlugin.concat(
       new MiniCssExtractPlugin({

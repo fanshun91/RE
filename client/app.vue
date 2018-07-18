@@ -5,18 +5,27 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from "vuex";
+import {
+  mapState,
+  mapGetters,
+  mapMutations
+  // mapActions
+} from "vuex";
 
 export default {
   data() {
     return {};
   },
   mounted() {
-    console.log(this.$store);
+    // this.testFunction("0.0.4");
   },
   computed: {
     ...mapState(["version"]),
     ...mapGetters(["showVersion"])
+  },
+  methods: {
+    // ...mapMutations(["testFunction"])
+    // ...mapActions
   }
 };
 </script>

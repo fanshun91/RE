@@ -125,9 +125,10 @@ export default {
     Side,
     Content
   },
+  props: ["wxid"],
   data() {
     return {
-      site: 1,
+      site: "1",
       list: [
         {
           name: "用户管理",

@@ -1,3 +1,6 @@
 export default {
-  testFunction () { }
+  testFunction (state, changes) {
+    state.version = changes
+    console.log(state.version)
+  }
 }
