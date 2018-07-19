@@ -126,6 +126,9 @@ export default {
     Content
   },
   props: ["wxid"],
+  metaInfo: {
+    title: "小鱼头条-用户详情"
+  },
   data() {
     return {
       site: "1",
@@ -425,7 +428,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .gotoPrev {
   position: absolute;
   right: 28px;

@@ -2,6 +2,9 @@
 import { Form } from "vue-antd-ui";
 
 const NormalLoginForm = {
+  metaInfo: {
+    title: "小鱼头条-登录"
+  },
   methods: {
     handleSubmit(e) {
       e.preventDefault();
@@ -137,7 +140,7 @@ export default Form.create()(NormalLoginForm);
   text-indent: 4px;
 }
 
-.login-form {
+.login-panel .login-form {
   max-width: 306px;
   margin: 0 auto;
 }

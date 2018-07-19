@@ -11,11 +11,12 @@ const isDev = process.env.NODE_ENV === 'development';
 const config = {
   entry: [
     'babel-polyfill',
-    path.join(__dirname, '../client/index.js'),
+    path.join(__dirname, '../client/create-entry.js'),
   ],
   output: {
-    filename: 'RE_bundle.js',
-    path: path.join(__dirname, '../dist')
+    filename: 'bundle.[hash:8].js',
+    path: path.join(__dirname, '../public'),
+    publicPath: 'http://127.0.0.1:8010/'
   },
   module: {
     rules: [

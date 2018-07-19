@@ -8,8 +8,9 @@ import App from './app.vue'
 import createRouter from './route/router'
 import createStore from './store/index'
 
-import 'moment/locale/zh-cn'
+import 'vue-antd-ui/dist/antd.css'
 import './assets/styles/common.css'
+import 'moment/locale/zh-cn'
 
 Vue.config.productionTip = false
 moment.locale('zh-cn')

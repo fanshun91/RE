@@ -53,7 +53,7 @@
 <script>
 import Header from "../../layout/header.vue";
 import Side from "../../layout/sidebar.vue";
-import Crumb from "../../components/breadCrumb.vue";
+import Crumb from "../../layout/breadCrumb.vue";
 import Content from "../../layout/content.vue";
 
 export default {
@@ -62,6 +62,9 @@ export default {
     Side,
     Crumb,
     Content
+  },
+  metaInfo: {
+    title: "小鱼头条-提现管理"
   },
   data() {
     return {

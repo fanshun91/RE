@@ -19,6 +19,9 @@ export default {
   mounted() {
     // this.testFunction("0.0.4");
   },
+  metaInfo: {
+    title: "小鱼头条后台管理系统"
+  },
   computed: {
     ...mapState(["version"]),
     ...mapGetters(["showVersion"])

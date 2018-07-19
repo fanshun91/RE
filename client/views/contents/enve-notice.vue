@@ -68,7 +68,7 @@
 import Header from "../../layout/header.vue";
 import Side from "../../layout/sidebar.vue";
 import Content from "../../layout/content.vue";
-import Crumb from "../../components/breadCrumb.vue";
+import Crumb from "../../layout/breadCrumb.vue";
 
 export default {
   components: {
@@ -76,6 +76,9 @@ export default {
     Side,
     Content,
     Crumb
+  },
+  metaInfo: {
+    title: "小鱼头条-红包通知"
   },
   data() {
     return {
