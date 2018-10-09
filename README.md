@@ -5,5 +5,6 @@
 ### 本地测试
 1. 执行 npm i，安装相关依赖
 2. 执行 npm run dev
-3. 访问localhost:8010
+3. 访问 localhost:8010
+4. 登录 xiaoyu & 123
 
