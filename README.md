@@ -1,4 +1,9 @@
-# RE
-201806
-WX applets backend
-Version 1.0.0
+# 小鱼头条
+> **后台管理页面**
+### 进度
+> 已完成基本的前端呈现
+### 本地测试
+1.执行 npm i，安装相应依赖
+2.npm start
+3.访问localhost:3333
+

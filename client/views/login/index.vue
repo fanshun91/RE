@@ -12,7 +12,7 @@ const NormalLoginForm = {
         if (!!err) {
           throw new Error(err);
         }
-        if (values.userName == "user" && values.password == "123") {
+        if (values.userName == "xiaoyu" && values.password == "123") {
           this.$router.push({ path: "/users" });
         }
       });

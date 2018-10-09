@@ -13,7 +13,7 @@
     </a-menu>
     <div class="admin-status">
       <a-avatar style="backgroundColor:#87d068" icon="user" />
-      <a href="#" @click="signOut">退出 <a-icon type="export" /></a>
+      <a href="javascript:;" @click="signOut">退出 <a-icon type="export" /></a>
     </div>
   </a-layout-header>
 </template>
@@ -58,7 +58,9 @@ export default {
     };
   },
   methods: {
-    signOut() {}
+    signOut() {
+      this.$router.push({ path: "/login" });
+    }
   }
 };
 </script>

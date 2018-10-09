@@ -14,8 +14,8 @@ const config = {
     path.join(__dirname, '../client/create-entry.js'),
   ],
   output: {
-    filename: 'bundle.[hash:8].js',
     path: path.join(__dirname, '../public'),
+    filename: 'bundle.[hash:8].js',
     publicPath: 'http://127.0.0.1:8010/'
   },
   module: {
